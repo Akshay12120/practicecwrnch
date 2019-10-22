@@ -23,6 +23,10 @@ class ChooseCummunity : BaseFragment() {
 
     override fun init() {
 tvToolbarTitle.text = "Choose a Community"
+        ivToolbarActionEnd.setImageResource(R.drawable.ic_search)
+        ivToolbarActionEnd.visibility = (View.VISIBLE);
+
+
 
     }
 

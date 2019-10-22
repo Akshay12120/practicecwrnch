@@ -72,8 +72,12 @@
     <string name="upload">Upload image</string>
     <string name="reset_password">Reset Password</string>
     <string name="txtmasg">A text message with a verification code was just sent to ( *******96 )</string>
+    <string name="choosecommunity">Choose a Community to start with. You can subscribe to more under your settings.</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="equipment">Equipment\n(Sale/Rent)</string>
+    <string name="technicaljobes">Technical\nJobes</string>
+    <string name="crowd_funding">Crowd Funding\nCampaigns</string>
 
 </resources>

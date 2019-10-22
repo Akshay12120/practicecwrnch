@@ -23,6 +23,7 @@ class ResetPassword : BaseFragment(){
 
     override fun init() {
         tvToolbarTitle.text = "Reset password"
+
     }
 
 }
