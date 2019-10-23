@@ -26,10 +26,10 @@ class Social : BaseFragment(){
 
     override fun init() {
         loginbtn.setOnClickListener{
-            (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = Loginpage())
+            (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = Loginpage(),isAddFragment = false)
         }
         signupbtn1.setOnClickListener {
-            (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = Signuppage())
+            (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = Signuppage(),isAddFragment = false)
         }
     }
 

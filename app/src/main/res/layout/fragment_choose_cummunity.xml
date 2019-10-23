@@ -33,13 +33,13 @@
         android:text="@string/choosecommunity"
         android:textColor="#4C5B5C"
         android:textSize="16sp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19"
-        app:layout_constraintWidth_percent="0.68" />
+        app:layout_constraintVertical_bias="0.19" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline9"
@@ -297,16 +297,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/guideline8"
         app:layout_constraintStart_toEndOf="@id/guideline6"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.888" />
+        app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <View
+        android:id="@+id/view"
         android:layout_width="0dp"
         android:layout_height="1dp"
+        android:layout_marginTop="24dp"
         android:background="#E5E5E5"
         app:layout_constraintEnd_toStartOf="@id/guideline8"
         app:layout_constraintStart_toEndOf="@id/guideline6"
-        android:layout_marginTop="24dp"
         app:layout_constraintTop_toBottomOf="@id/card3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

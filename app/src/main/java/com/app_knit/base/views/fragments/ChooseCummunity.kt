@@ -29,7 +29,7 @@ class ChooseCummunity : BaseFragment() {
 tvToolbarTitle.text = "Choose a Community"
         ivToolbarActionEnd.setImageResource(R.drawable.ic_search)
         ivToolbarActionEnd.visibility = (View.VISIBLE);
-continuebtn.setOnClickListener { (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = ChooseRegion()) }
+continuebtn.setOnClickListener { (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = ChooseRegion(),isAddFragment = false) }
 
 
     }

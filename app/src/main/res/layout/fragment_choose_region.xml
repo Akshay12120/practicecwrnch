@@ -39,13 +39,13 @@
         android:layout_height="wrap_content"
         android:text="@string/chooseregion"
         android:textSize="15sp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/guideline12"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toEndOf="@id/guideline10"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19"
-        app:layout_constraintWidth_percent="0.73" />
+        app:layout_constraintVertical_bias="0.19" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
@@ -63,6 +63,7 @@
             android:layout_height="match_parent">
 
             <TextView
+                android:id="@+id/mary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Maryland"
@@ -84,8 +85,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.1"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.8" />
+               app:layout_constraintTop_toBottomOf="@id/mary"
+                app:layout_constraintVertical_bias="0.2" />
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -97,7 +98,7 @@
                 app:layout_constraintHorizontal_bias="0.04"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.03" />
+                app:layout_constraintVertical_bias="0.1" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -119,6 +120,7 @@
             android:layout_height="match_parent">
 
             <TextView
+                android:id="@+id/wash"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Washington"
@@ -140,8 +142,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.1"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.8" />
+               app:layout_constraintTop_toBottomOf="@id/wash"
+                app:layout_constraintVertical_bias="0.2" />
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -175,6 +177,7 @@
             android:layout_height="match_parent">
 
             <TextView
+                android:id="@+id/york"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="New York City"
@@ -196,8 +199,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.1"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.8" />
+                app:layout_constraintTop_toBottomOf="@id/york"
+                app:layout_constraintVertical_bias="0.2" />
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -208,7 +211,7 @@
                 app:layout_constraintHorizontal_bias="0.04"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.03" />
+                app:layout_constraintVertical_bias="0.1" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -230,6 +233,7 @@
             android:layout_height="match_parent">
 
             <TextView
+                android:id="@+id/loss"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Los Angelas"
@@ -251,8 +255,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.1"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.8" />
+                app:layout_constraintTop_toBottomOf="@+id/loss"
+                app:layout_constraintVertical_bias="0.2" />
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -270,6 +274,7 @@
     </androidx.cardview.widget.CardView>
 
     <View
+        android:id="@+id/line2"
         android:layout_width="0dp"
         android:layout_height="1dp"
         android:background="#E5E5E5"
@@ -280,6 +285,7 @@
 
 
     <Button
+        android:id="@+id/continubtn2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded"
@@ -288,8 +294,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/guideline12"
         app:layout_constraintStart_toEndOf="@id/guideline10"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.888" />
+        app:layout_constraintTop_toBottomOf="@+id/line2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -24,7 +24,7 @@ class Signuppage : BaseFragment(){
         get() = null
     override fun init() {
     signverify.setOnClickListener {
-        (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = Verification())
+        (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = Verification(),isAddFragment = false)
     }
     }
 }

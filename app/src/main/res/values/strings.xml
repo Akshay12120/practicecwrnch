@@ -80,5 +80,6 @@
     <string name="technicaljobes">Technical\nJobes</string>
     <string name="crowd_funding">Crowd Funding\nCampaigns</string>
     <string name="chooseregion">You can pick one region for free to start with. You can change the region at any time from the settings.</string>
+    <string name="welcometoCwrnch">Welcome to C-WRNCH app, you can start by setting up your profile and joining a channel.</string>
 
 </resources>

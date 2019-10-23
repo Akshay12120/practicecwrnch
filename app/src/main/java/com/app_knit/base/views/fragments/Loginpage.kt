@@ -19,10 +19,10 @@ class Loginpage : BaseFragment() {
         get() = null
     override fun init() {
         forgtPswrd.setOnClickListener {
-            (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = ResetPassword())
+            (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = ResetPassword(),isAddFragment = false)
         }
         signupbtn.setOnClickListener {
-            (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = Signuppage())
+            (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = Signuppage(),isAddFragment = false)
         }
     }
 }

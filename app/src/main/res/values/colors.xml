@@ -5,6 +5,7 @@
     <color name="colorAccent">#F83F5B</color>
 
     <color name="colorTransparent">#00000000</color>
+    <color name="colorTransparent2">#3891A6</color>
     <color name="colorTitle">#346375</color>
     <!--<color name="colorDivider">#E7E7E7</color>-->
     <color name="colorPrimaryTextDark">#464444</color>

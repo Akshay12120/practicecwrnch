@@ -25,7 +25,7 @@ class Verification : BaseFragment() {
     override val viewModel: BaseViewModel?
         get() = null
     override fun init() {
-verifybtn.setOnClickListener { (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = ChooseCummunity()) }
+verifybtn.setOnClickListener { (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = ChooseCummunity(),isAddFragment = false) }
     }
 
 
