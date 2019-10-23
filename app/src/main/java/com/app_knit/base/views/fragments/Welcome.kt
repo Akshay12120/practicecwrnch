@@ -22,7 +22,7 @@ class Welcome : BaseFragment() {
         get() = null
 
     override fun init() {
-//        continuebtn3.setOnClickListener { (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager,containerViewId = R.id.flFragContainerMain,fragment = ChooseCummunity(), isAddFragment = false) }
+        continuebtn3.setOnClickListener { (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager,containerViewId = R.id.flFragContainerMain,fragment = NewGroup(), isAddFragment = false) }
 
     }
 
