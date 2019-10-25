@@ -14,7 +14,7 @@
         android:id="@+id/imgGroupView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/ic_group_avatar"
+        android:src="@drawable/ic_group_avatar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/guideline16"
         app:layout_constraintStart_toEndOf="@id/guideline15"
