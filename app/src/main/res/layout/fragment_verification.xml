@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAFAFA"
+    android:background="@color/whitecolor"
     android:clickable="true"
     android:focusable="true"
     android:fitsSystemWindows="true"
-    tools:context=".views.fragments.Verification">
+    tools:context=".views.fragments.VerificationFragment">
 
     <include layout="@layout/toolbar" />
 

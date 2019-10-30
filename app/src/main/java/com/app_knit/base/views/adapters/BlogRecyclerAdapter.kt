@@ -1,4 +1,4 @@
-package com.app_knit.base.views.fragments
+package com.app_knit.base.views.adapters
 
 
 import android.view.LayoutInflater
@@ -9,7 +9,7 @@ import com.app_knit.base.R
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.codingwithmitch.kotlinrecyclerviewexample.models.BlogPost
-import kotlinx.android.synthetic.main.layout_blog_list_item.view.*
+import kotlinx.android.synthetic.main.row_blog_list_item.view.*
 
 
 class BlogRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
@@ -18,7 +18,7 @@ class BlogRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return BlogViewHolder(
-            LayoutInflater.from(parent.context).inflate(R.layout.layout_blog_list_item,parent,false)
+                LayoutInflater.from(parent.context).inflate(R.layout.row_blog_list_item, parent, false)
         )
     }
 

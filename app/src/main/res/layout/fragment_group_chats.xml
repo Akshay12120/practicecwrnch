@@ -8,7 +8,7 @@
     android:background="@color/whitecolor"
     android:clickable="true"
     android:focusable="true"
-    tools:context=".views.fragments.GroupChats">
+    tools:context=".views.fragments.GroupChatsFragment">
 
     <include layout="@layout/toolbar" />
 

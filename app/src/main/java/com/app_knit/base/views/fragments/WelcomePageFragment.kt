@@ -1,7 +1,6 @@
 package com.app_knit.base.views.fragments
 
 
-import android.os.Bundle
 import android.view.*
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
@@ -15,14 +14,14 @@ import kotlinx.android.synthetic.main.fragment_welcome.*
 /**
  * A simple [Fragment] subclass.
  */
-class Welcome : BaseFragment() {
+class WelcomePageFragment : BaseFragment() {
     override val layoutId: Int
         get() = R.layout.fragment_welcome
     override val viewModel: BaseViewModel?
         get() = null
 
     override fun init() {
-        continuebtn3.setOnClickListener { (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager,containerViewId = R.id.flFragContainerMain,fragment = NewGroup(), isAddFragment = false) }
+        continuebtn3.setOnClickListener { (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager,containerViewId = R.id.flFragContainerMain,fragment = NewGroupFragment(), isAddFragment = false) }
 
     }
 

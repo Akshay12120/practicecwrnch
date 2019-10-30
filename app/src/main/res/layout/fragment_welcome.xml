@@ -8,7 +8,7 @@
     android:focusable="true"
     android:clickable="true"
     android:background="#FAFAFA"
-    tools:context=".views.fragments.Welcome">
+    tools:context=".views.fragments.WelcomePageFragment">
     <View
         android:id="@+id/greenView"
         android:layout_width="match_parent"

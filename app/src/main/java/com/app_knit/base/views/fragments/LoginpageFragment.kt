@@ -12,17 +12,17 @@ import kotlinx.android.synthetic.main.fragment_loginpage.*
 /**
  * A simple [Fragment] subclass.
  */
-class Loginpage : BaseFragment() {
+class LoginpageFragment : BaseFragment() {
     override val layoutId: Int
         get() = R.layout.fragment_loginpage
     override val viewModel: BaseViewModel?
         get() = null
     override fun init() {
         forgtPswrd.setOnClickListener {
-            (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = ResetPassword(),isAddFragment = false)
+            (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = ResetPasswordFragment(),isAddFragment = false)
         }
         signupbtn.setOnClickListener {
-            (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = Signuppage(),isAddFragment = false)
+            (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = SignupPageFragment(),isAddFragment = false)
         }
     }
 }

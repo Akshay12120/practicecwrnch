@@ -1,4 +1,4 @@
-package com.app_knit.base.views.fragments
+package com.app_knit.base.views.fragments.Datasource
 
 import com.codingwithmitch.kotlinrecyclerviewexample.models.BlogPost
 

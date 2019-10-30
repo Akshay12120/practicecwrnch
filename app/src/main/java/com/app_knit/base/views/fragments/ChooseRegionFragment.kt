@@ -9,13 +9,15 @@ import com.app_knit.base.R
 import com.app_knit.base.viewmodels.BaseViewModel
 import com.app_knit.base.views.activities.BaseAppCompactActivity
 import com.app_knit.base.views.activities.doFragmentTransaction
+import com.app_knit.base.views.adapters.RegionRecyclerAdapter
+import com.app_knit.base.views.fragments.Datasource.PostSource
 import kotlinx.android.synthetic.main.fragment_choose_region.*
 import kotlinx.android.synthetic.main.toolbar.*
 
 /**
  * A simple [Fragment] subclass.
  */
-class ChooseRegion : BaseRecyclerViewFragment() {
+class ChooseRegionFragment : BaseRecyclerViewFragment() {
 
     override val layoutId: Int
         get() = R.layout.fragment_choose_region
@@ -28,7 +30,7 @@ class ChooseRegion : BaseRecyclerViewFragment() {
         tvToolbarTitle.text = "Choose Region"
         ivToolbarActionEnd.setImageResource(R.drawable.ic_search)
         ivToolbarActionEnd.visibility = (View.VISIBLE);
-        continubtn2.setOnClickListener { (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = Welcome(), isAddFragment = false) }
+        continubtn2.setOnClickListener { (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = WelcomePageFragment(), isAddFragment = false) }
         val data = PostSource.createDataset1()
         Regionrecycleradapter.submitList(data)
 
