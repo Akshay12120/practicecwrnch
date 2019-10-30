@@ -43,7 +43,7 @@ class ChooseRegion : BaseRecyclerViewFragment() {
         get() = GridLayoutManager(context, 2, GridLayoutManager.HORIZONTAL, false)
     //get() = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
     override val isShowRecyclerViewDivider: Boolean
-        get() = true
+        get() = false
 
     override fun onPullDownToRefresh() {
 
