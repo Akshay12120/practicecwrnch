@@ -81,5 +81,21 @@
     <string name="crowd_funding">Crowd Funding\nCampaigns</string>
     <string name="chooseregion">You can pick one region for free to start with. You can change the region at any time from the settings.</string>
     <string name="welcometoCwrnch">Welcome to C-WRNCH app, you can start by setting up your profile and joining a channel.</string>
+    <string name="enter_verification_code">Enter Verification Code</string>
+    <string name="verify">VERIFY</string>
+    <string name="didn_t_get_a_code">Didn’t get a code?</string>
+    <string name="continu">Continue</string>
+    <string name="continu1">Continue</string>
+    <string name="welcome">Welcome</string>
+    <string name="continu3">continue</string>
+    <string name="user">1.269 Users</string>
+    <string name="type_group_subject_here">Type group subject here</string>
+    <string name="maryland">Maryland</string>
+    <string name="hello">hello</string>
+    <string name="sub">sub</string>
+    <string name="reply">Reply</string>
+    <string name="confirm_password1">Confirm Password</string>
+    <string name="display_name">Display Name</string>
+
 
 </resources>

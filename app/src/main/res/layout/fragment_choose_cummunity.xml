@@ -11,21 +11,21 @@
     tools:context=".views.fragments.ChooseCummunityFragment">
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline6"
+        android:id="@+id/guidelineStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.05" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline8"
+        android:id="@+id/guidelineEnd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.95" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline9"
+        android:id="@+id/guidelineCenter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -35,19 +35,18 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/StyleRegular"
+        android:ems="10"
+        android:lineSpacingExtra="5sp"
         android:text="@string/choosecommunity"
         android:textColor="#4C5B5C"
         android:textSize="16sp"
-        android:layout_marginEnd="16dp"
-        android:minLines="2"
-        android:maxLines="5"
-        android:lineSpacingExtra="5sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
         app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.19" />
 
@@ -73,12 +72,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded"
-        android:text="Continue"
+        android:text="@string/continu"
         android:textColor="@color/whitecolor"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/guideline8"
-        app:layout_constraintStart_toEndOf="@id/guideline6"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@id/guidelineStart"
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <View
@@ -87,8 +86,8 @@
         android:layout_height="1dp"
         android:layout_marginTop="24dp"
         android:background="#E5E5E5"
-        app:layout_constraintEnd_toStartOf="@id/guideline8"
-        app:layout_constraintStart_toEndOf="@id/guideline6"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@id/guidelineStart"
         app:layout_constraintTop_toBottomOf="@id/recyclerView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

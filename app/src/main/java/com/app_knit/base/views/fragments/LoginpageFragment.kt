@@ -18,7 +18,7 @@ class LoginpageFragment : BaseFragment() {
     override val viewModel: BaseViewModel?
         get() = null
     override fun init() {
-        forgtPswrd.setOnClickListener {
+        txtvForgotpasswrd.setOnClickListener {
             (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = ResetPasswordFragment(),isAddFragment = false)
         }
         signupbtn.setOnClickListener {

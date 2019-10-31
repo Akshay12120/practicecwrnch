@@ -8,7 +8,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryTextDarkGreen</item>
         <item name="colorAccent">@color/colorPrimaryTextGreen</item>
         <item name="colorButtonNormal">@color/colorPrimaryTextGreen</item>
-        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/tint</item>
         <item name="android:windowBackground">@color/colorWhite</item>
         <item name="android:textColorPrimary">@color/colorPrimaryText</item>
         <item name="cardViewStyle">@style/CardView</item>

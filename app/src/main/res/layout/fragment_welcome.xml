@@ -5,64 +5,73 @@
     android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:focusable="true"
-    android:clickable="true"
     android:background="#FAFAFA"
+    android:clickable="true"
+    android:focusable="true"
     tools:context=".views.fragments.WelcomePageFragment">
+
     <View
         android:id="@+id/greenView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="#3891A6"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.67"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:background="#3891A6"/>
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline13"
+        android:id="@+id/guidelineStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.05"/>
+        app:layout_constraintGuide_percent="0.05" />
+
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline14"
+        android:id="@+id/guidelineEnd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.95"/>
+        app:layout_constraintGuide_percent="0.95" />
+
     <TextView
         android:id="@+id/welcome"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Welcome"
+        android:text="@string/welcome"
+        style="@style/StyleSemiBold"
         android:textColor="#346375"
         android:textSize="36sp"
-        app:layout_constraintTop_toBottomOf="@id/greenView"
-        app:layout_constraintStart_toEndOf="@id/guideline13"
-        app:layout_constraintEnd_toStartOf="@id/guideline14"/>
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/greenView" />
+
     <TextView
         android:id="@+id/welcometocwrnch"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/StyleRegular"
+        android:ems="14"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0"
         android:text="@string/welcometoCwrnch"
-        android:textSize="15sp"
         android:textColor="#4C5B5C"
-        app:layout_constraintTop_toBottomOf="@id/welcome"
-        app:layout_constraintStart_toEndOf="@id/guideline13"
-        android:layout_marginTop="6dp"
-        app:layout_constraintEnd_toStartOf="@id/guideline14"/>
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/welcome" />
+
     <Button
         android:id="@+id/continuebtn3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded"
-        android:text="continue"
+        android:text="@string/continu3"
         android:textColor="@color/whitecolor"
-        app:layout_constraintStart_toEndOf="@id/guideline13"
-        app:layout_constraintEnd_toStartOf="@id/guideline14"
-        app:layout_constraintTop_toBottomOf="@id/welcometocwrnch"
-        app:layout_constraintBottom_toBottomOf="parent"/>
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/welcometocwrnch" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
