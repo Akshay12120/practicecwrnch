@@ -8,6 +8,7 @@ import com.app_knit.base.viewmodels.BaseViewModel
 import com.app_knit.base.views.activities.BaseAppCompactActivity
 import com.app_knit.base.views.activities.doFragmentTransaction
 import kotlinx.android.synthetic.main.fragment_verification.*
+import kotlinx.android.synthetic.main.toolbar.*
 
 /**
  * A simple [Fragment] subclass.
@@ -19,6 +20,7 @@ class VerificationFragment : BaseFragment() {
         get() = null
     override fun init() {
 verifybtn.setOnClickListener { (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = ChooseCummunityFragment(),isAddFragment = false) }
+   toolbar.elevation = 0f
     }
 
 
