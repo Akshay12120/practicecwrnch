@@ -97,6 +97,9 @@
     <string name="confirm_password1">Confirm Password</string>
     <string name="display_name">Display Name</string>
     <string name="josie_diana">Josie Diana</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="mysubsci">My Subscriptions</string>
+    <string name="my_friends">My Friends</string>
 
 
 </resources>
