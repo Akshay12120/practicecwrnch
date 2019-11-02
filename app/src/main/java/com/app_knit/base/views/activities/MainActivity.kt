@@ -2,6 +2,7 @@ package com.app_knit.base.views.activities
 
 import android.content.Intent
 import com.app_knit.base.R
+import com.app_knit.base.views.fragments.TrouvailleFragment
 import com.example.socialapp.SocialFragment
 
 
@@ -15,7 +16,7 @@ class MainActivity : BaseAppCompactActivity() {
 
     override fun init() {
 
-        doFragmentTransaction(fragManager = supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = SocialFragment())
+        doFragmentTransaction(fragManager = supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = TrouvailleFragment())
 
         // check if app is restarted from launcher icon then close redundant activity
         if (!isTaskRoot

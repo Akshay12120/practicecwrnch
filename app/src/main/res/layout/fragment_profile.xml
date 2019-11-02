@@ -45,6 +45,7 @@
         android:textColor="@color/tint"
         android:drawableEnd="@drawable/ic_edit"
         android:drawablePadding="8dp"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
         app:layout_constraintTop_toBottomOf="@id/ivProfile"
         style="@style/StyleSemiBold"/>
@@ -68,17 +69,19 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/txtvAccount"
         app:layout_constraintStart_toEndOf="@id/guidelineStart"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.08"
+        android:layout_marginTop="31dp"
+        app:layout_constraintVertical_bias="0.06"
+        app:layout_constraintHorizontal_bias="0"
         android:text="@string/mysubsci"
         android:textColor="@color/logincolor"
         style="@style/StyleSemiBold"
         android:textSize="16sp"
-        android:ems="17"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+        android:ems="15"
         android:drawableStart="@drawable/ic_subscriptions"
         android:drawablePadding="10dp"
         android:drawableEnd="@drawable/ic_arow"/>
-    <view
+    <View
         android:id="@+id/view"
         android:layout_width="0dp"
         android:layout_height="1dp"
@@ -88,6 +91,7 @@
         app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
         android:layout_marginTop="4dp"/>
     <TextView
+        android:id="@+id/txtvFriends"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/view"
@@ -96,15 +100,60 @@
         android:textSize="16sp"
         android:textColor="@color/logincolor"
         style="@style/StyleSemiBold"
-        app:layout_constraintVertical_bias="0.05"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+        android:layout_marginTop="31dp"
+        android:ems="15"
         android:drawableStart="@drawable/ic_myfriend"
         android:drawableEnd="@drawable/ic_arow"
-        android:drawablePadding="10dp"
-        android:ems="17"/>
-    <view
+        android:drawablePadding="2dp" />
+    <View
+        android:id="@+id/view2"
         android:layout_width="0dp"
         android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/txtvFriends"
+        android:background="#D9D9D9"
+        app:layout_constraintStart_toEndOf="@id/guidelineStart"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd"/>
+    <TextView
+        android:id="@+id/txttvSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        app:layout_constraintTop_toBottomOf="@id/view2"
+        android:textColor="@color/logincolor"
+        style="@style/StyleSemiBold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+        android:layout_marginTop="31dp"
+        app:layout_constraintHorizontal_bias="0"
+        android:drawableStart="@drawable/settings"
+        android:drawableEnd="@drawable/ic_arow"
+        android:ems="15"
+        android:drawablePadding="10dp"/>
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/txttvSettings"
+        android:background="#D9D9D9"
+        app:layout_constraintStart_toEndOf="@id/guidelineStart"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:textColor="#086788"
+        app:layout_constraintStart_toEndOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/view3"
+        android:layout_marginTop="28dp"
+        style="@style/StyleSemiBold"
+        android:textSize="14sp"/>
+
+
 
 
 

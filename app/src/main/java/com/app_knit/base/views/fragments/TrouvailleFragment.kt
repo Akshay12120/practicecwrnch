@@ -9,20 +9,18 @@ import android.view.ViewGroup
 
 import com.app_knit.base.R
 import com.app_knit.base.viewmodels.BaseViewModel
-import kotlinx.android.synthetic.main.toolbar.*
 
 /**
  * A simple [Fragment] subclass.
  */
-class ProfileFragment : BaseFragment() {
+class TrouvailleFragment : BaseFragment() {
     override val layoutId: Int
-        get() = R.layout.fragment_profile
+        get() = R.layout.fragment_trouvaille
     override val viewModel: BaseViewModel?
         get() = null
 
     override fun init() {
-        tvToolbarTitle.text ="Profile"
-        toolbar.elevation = 0f
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
 

@@ -10,6 +10,7 @@ import com.app_knit.base.views.activities.BaseAppCompactActivity
 import com.app_knit.base.views.activities.doFragmentTransaction
 import com.app_knit.base.views.adapters.BlogRecyclerAdapter
 import com.app_knit.base.views.fragments.Datasource.DataSource
+import kotlinx.android.synthetic.main.row_blog_list_item.*
 import kotlinx.android.synthetic.main.toolbar.*
 
 /**

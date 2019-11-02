@@ -7,6 +7,7 @@ import com.app_knit.base.viewmodels.BaseViewModel
 import com.app_knit.base.views.activities.BaseAppCompactActivity
 import com.app_knit.base.views.activities.doFragmentTransaction
 import com.app_knit.base.views.fragments.BaseFragment
+import com.app_knit.base.views.fragments.ProfileFragment
 import kotlinx.android.synthetic.main.fragment_loginpage.*
 
 /**
@@ -23,6 +24,9 @@ class LoginpageFragment : BaseFragment() {
         }
         signupbtn.setOnClickListener {
             (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = SignupPageFragment(),isAddFragment = false)
+        }
+        loginbtn.setOnClickListener {
+            (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = ProfileFragment(),isAddFragment = false)
         }
     }
 }
